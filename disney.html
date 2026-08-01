@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Series</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-platform="disney">
+    <header>
+        <div class="heading">
+            <div class="logo">
+                <a href="main.html" class="nav-link">
+                    <h2 class="title">TV Series</h2>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-link">
+                    <li class="nav-item"><a href="series.html" class="nav-link">Seriale</a></li>
+                    <select name="platforms" id="platforms" class="platform-list">
+                        <option selected disabled>Platformy Streamingowe</option>
+                        <option value="series.html">Wszystkie</option>
+                        <option value="netflix.html">Netflix</option>
+                        <option value="hbomax.html">HBOMAX</option>
+                        <option value="disney.html">Disney+</option>                       
+                    </select>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="controls">
+        <select id="genreFilter" class="genre-filter">
+            <option value="all">Wszystkie gatunki</option>
+            <option value="Dramat">Dramat</option>
+            <option value="Fantazyjny">Fantazyjny</option>
+            <option value="Komedia">Komedia</option>
+            <option value="Horror">Horror</option>
+            <option value="Animacja dla dorosłych">Animacja dla dorosłych</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Przygodowy">Przygodowy</option>
+            <option value="Kryminał">Kryminał</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+        <input type="text" id="search" class="search" placeholder=" 🔍 Wyszukaj serial... ">
+    </div>
+    <section class="series">
+        <div id="series" class="cards"></div>
+    </section>
+    <footer>
+        <div class="foot">
+            <p>Plakaty i opisy seriali należą do ich odpowiednich właścicieli</p>
+            <p>Projekt i wykonanie © 2026 Adriana Wysocka</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/platform.js"></script>
+</body>
+
+</html>
